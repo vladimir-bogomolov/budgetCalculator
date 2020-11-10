@@ -86,7 +86,7 @@ function App() {
     
     <h1>Budget Calculator</h1>
     <main className='App'>
-      <ExpenseForm charge={charge} amount={amount} handleAmount={handleAmount} handleCharge={handleCharge} handleSubmit={handleSubmit}/>
+      <ExpenseForm charge={charge} amount={amount} handleAmount={handleAmount} handleCharge={handleCharge} handleSubmit={handleSubmit} edit={edit}/>
       <ExpenseList expenses = {expenses} handleDelete={handleDelete} handleEdit={handleEdit} clearItems={clearItems} edit={edit}/>
     </main>
   <h1>Total: <span className='total'>${expenses.reduce((acc, curr) => {
